@@ -1,0 +1,9 @@
+{% if hero_list %}
+    <ul>
+    {% for hero in hero_list %}
+        <li><a href="/ffbe_app/{{ hero.id }}/">{{ hero.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No heros are available.</p>
+{% endif %}
